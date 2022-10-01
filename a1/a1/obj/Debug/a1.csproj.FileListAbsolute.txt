@@ -1,0 +1,7 @@
+D:\ICS Training\a1\a1\bin\Debug\a1.exe.config
+D:\ICS Training\a1\a1\bin\Debug\a1.exe
+D:\ICS Training\a1\a1\bin\Debug\a1.pdb
+D:\ICS Training\a1\a1\obj\Debug\a1.csproj.AssemblyReference.cache
+D:\ICS Training\a1\a1\obj\Debug\a1.csproj.CoreCompileInputs.cache
+D:\ICS Training\a1\a1\obj\Debug\a1.exe
+D:\ICS Training\a1\a1\obj\Debug\a1.pdb
