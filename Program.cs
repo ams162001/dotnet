@@ -25,10 +25,7 @@ namespace Assignment_4
             DisplayCustomer(c1);
             Customer c2 = new Customer();
             GC.Collect();
-
-
-
-        }
+         }
 
         public Customer()
         {
