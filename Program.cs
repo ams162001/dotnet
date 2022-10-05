@@ -1,97 +1,60 @@
-﻿[12:50] Harish Sivakumar
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Day2Exercise
+namespace Assignment_4
 {
-    class Program
+    //Create a class called Customer with Customerid, Name, Age, Phone,City. Write a constructor with no arguments and
+    //another constructor with all information.  Write a method called DisplayCustomer(),
+    //which is called directly without any object. Also  include destructor
+
+    class Customer
     {
+        int CustomerId;
+        string Name;
+        int age;
+        string Phone;
+        string City;
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            Console.WriteLine("**********Customer Details**********");
+            Customer c1 = new Customer(10, "Aish", 22, "9876543210", "mysore");
+            DisplayCustomer(c1);
+            Customer c2 = new Customer();
+            GC.Collect();
 
-            //array            #region            Program program = new Program();
 
-            //min and max value finding            program.MaxAndMin();
-
-            //exercise 2 on array            Console.WriteLine("Enter 10marks");            program.ex2();            #endregion            //string             #region            //strin length            StrEx ex = new StrEx();            Console.WriteLine("enter the name");            string name = Console.ReadLine();            ex.length(name);
-
-            //string reverse            Console.WriteLine("****************String reversing*************");            Console.WriteLine(ex.Reverse(name));            Console.WriteLine();
-
-            //string comparision            Console.WriteLine("enter first name and last name to check whether both are equal");            string fname = Console.ReadLine();            string lname = Console.ReadLine();                        ex.comparision(fname, lname);
-
-            //palindrome            Console.Write("Enter a string to Check Palindrome : ");            StrEx.palindrome();            Console.Read();            #endregion        }        public void MaxAndMin()        {            float sum = 0f;            int max, min;
-
-            int[] arr = new int[] { 3, 5, 11, 8, 6, 2 }; max = arr[0]; min = arr[0]; for (int i = 0; i < arr.Length; i++) { if (arr[i] > max) { max = arr[i]; } if (arr[i] < min) { min = arr[i]; } }
-            Console.WriteLine("maximum value in array is " + max); Console.WriteLine("minimum value in array is " + min);
-
-            for (int i = 0; i < arr.Length; i++) { sum = arr[i] + sum; }
-            sum = sum / arr.Length; Console.WriteLine("average of an array is " + sum);
 
         }
-        public void ex2()
+
+        public Customer()
         {
 
-            int sum = 0; int mx; int mn;
-
-            int[] marks = new int[10];
-
-
-            //Inputs -- Marks
-
-            for (int i = 0; i < marks.Length; i++) { marks[i] = Convert.ToInt32(Console.ReadLine()); }
-
-            mx = marks[0]; mn = marks[0];
-
-            //finding min and max marks            for (int j = 1; j < marks.Length; j++)            {                if (marks[j] < mn)                {                    mn = marks[j];                }
-
-            if (marks[j] > mx) { mx = marks[j]; }
+        }
+        public Customer(int CustomerId, string Name, int age, string Phone, string City)
+        {
+            this.CustomerId = CustomerId;
+            this.Name = Name;
+            this.age = age;
+            this.Phone = Phone;
+            this.City = City;
+        }
+        public static void DisplayCustomer(Customer customer)
+        {
+            Console.WriteLine("Customer Id: " + customer.CustomerId);
+            Console.WriteLine("Customer Name: " + customer.Name);
+            Console.WriteLine("Customer age: " + customer.age);
+            Console.WriteLine("Phone Number: " + customer.Phone);
+            Console.WriteLine("City: " + customer.City);
         }
 
-        //printing  min marks            Console.WriteLine("maximum mark is " + mx);            Console.WriteLine("minimum mark is " + mn);
-
-        //finding avg of marks.            for (int i = 0; i < marks.Length; i++)            {                sum = marks[i] + sum;            }            //printing totalmarks            Console.WriteLine("Total mark is " + sum);            sum = sum / marks.Length;
-
-        //printing avg marks.            Console.WriteLine("average mark is " + sum);
-
+        ~Customer()
+        {
+            Console.WriteLine("Thank You...!!! Destructor Called");
+            Console.ReadLine();
+        }
     }
-
-    //Write a program in C# to accept two words from user and find out if they are same. 
-
-
-    [12:50]
-    Harish Sivakumar
-// Write a program in C# to accept a word and to find out whether the given word is a palindrome or not.        public class StrEx        {            
-
-           public void length(string name) { int lengthOfName = name.Length; Console.WriteLine("length of the string name is " + lengthOfName); }
-    public string Reverse(string name)
-    {
-        if (name.Length <= 1) { return name; } else { return Reverse(name.Substring(1)) + name[0]; }
-
-    }
-    public void comparision(string fname, string lname)
-    {
-
-        if (String.Equals(fname, lname)) Console.WriteLine($"{fname} and {lname} have same value."); else Console.WriteLine($"{fname} and {lname} are different.");
-    }
-    public static void palindrome()
-    {
-
-        string name = Console.ReadLine(); string reverse = string.Empty;
-
-
-        for (int i = name.Length - 1; i >= 0; i--) { reverse += name[i]; }
-
-
-        if (name == reverse) { Console.WriteLine($"{name} is Palindrome."); } else { Console.WriteLine($"{name} is not Palindrome"); }
-
-    }
-}    }
-
-
 }
-
-
