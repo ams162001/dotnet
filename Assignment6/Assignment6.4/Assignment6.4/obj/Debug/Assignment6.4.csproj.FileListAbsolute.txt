@@ -1,0 +1,6 @@
+D:\Assignment6\Assignment6.4\Assignment6.4\bin\Debug\Assignment6.4.exe.config
+D:\Assignment6\Assignment6.4\Assignment6.4\bin\Debug\Assignment6.4.exe
+D:\Assignment6\Assignment6.4\Assignment6.4\bin\Debug\Assignment6.4.pdb
+D:\Assignment6\Assignment6.4\Assignment6.4\obj\Debug\Assignment6.4.csproj.CoreCompileInputs.cache
+D:\Assignment6\Assignment6.4\Assignment6.4\obj\Debug\Assignment6.4.exe
+D:\Assignment6\Assignment6.4\Assignment6.4\obj\Debug\Assignment6.4.pdb
