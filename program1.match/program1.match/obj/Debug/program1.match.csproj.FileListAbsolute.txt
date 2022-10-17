@@ -1,0 +1,7 @@
+D:\Assignment6\program1.match\program1.match\obj\Debug\program1.match.csproj.AssemblyReference.cache
+D:\Assignment6\program1.match\program1.match\obj\Debug\program1.match.csproj.CoreCompileInputs.cache
+D:\Assignment6\program1.match\program1.match\bin\Debug\program1.match.exe.config
+D:\Assignment6\program1.match\program1.match\bin\Debug\program1.match.exe
+D:\Assignment6\program1.match\program1.match\bin\Debug\program1.match.pdb
+D:\Assignment6\program1.match\program1.match\obj\Debug\program1.match.exe
+D:\Assignment6\program1.match\program1.match\obj\Debug\program1.match.pdb
